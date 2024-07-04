@@ -17,7 +17,7 @@ function App() {
       setResult(bmi);
       if(bmi < 18.5){
         setMessage("You are under weight");
-      }else if(bmi >= 18.5 || bmi <= 25){
+      }else if(bmi >= 18.5 && bmi <= 25){
         setMessage("You have a healthy body")
       }else{
         setMessage("You are over weight")
@@ -86,11 +86,11 @@ function App() {
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
-            {`Your BMI is ${message}`}
+          <p className="mt-10 text-center text-gray-900 text-sm">
+            {`Your BMI is ${result}`}
           </p>
-          <p className="mt-10 text-center text-sm text-gray-500">
-            {`${result}`}
+          <p className="mt-10 text-center text-sm  text-gray-500">
+            {`${message}`}
           </p>
         </div>
       </div>
